@@ -1,0 +1,57 @@
+/* ==========================================================================
+   NJU THEME - LIGHT VERSION  (南大紫 #722F37)
+   --------------------------------------------------------------------------
+   新增文件，不改动模板任何已有文件。
+   在 _config.yml 中设置：site_theme: "nju"
+   除主色系外，其余变量与 default 主题保持一致 —— 布局、字号、间距完全不变。
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #722F37;                              /* 南大紫（主色） */
+$dark-primary-color         : mix(#000, $primary-color, 25%);       /* 主色加深：hover / 按下 */
+$darker-primary-color       : mix(#000, $primary-color, 45%);
+$light-primary-color        : mix(#fff, $primary-color, 35%);
+$lighter-primary-color      : mix(#fff, $primary-color, 90%);       /* 极浅主色：弱底色 */
+
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 90%);
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #{$primary-color};
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Default light theme for the site */
+:root {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #fff;
+    --global-footer-bg-color            : #f2f3f3;          /* 页脚保持中性浅灰，如需改成南大紫见 README 说明 */
+    --global-border-color               : #{$lighter-gray};
+    --global-dark-border-color          : #bdc1c4;
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
+    --global-link-color                 : #{$primary-color};        /* 正文链接 = 南大紫 */
+    --global-link-color-hover           : #{$dark-primary-color};
+    --global-link-color-visited         : #{$primary-color};        /* 已访问链接同色，保持干净 */
+    --global-masthead-link-color        : #{$dark-gray};
+    --global-masthead-link-color-hover  : #{$primary-color};        /* 导航高亮 = 南大紫 */
+    --global-text-color                 : #{$dark-gray};
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{$lighter-gray};
+}

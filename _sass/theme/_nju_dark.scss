@@ -1,0 +1,60 @@
+/* ==========================================================================
+   NJU THEME - DARK VERSION  (南大紫 #722F37)
+   --------------------------------------------------------------------------
+   与 _nju_light.scss 成对使用，供站点右上角的深浅色切换按钮生效。
+   深色底上直接使用 #722F37 对比度不足，因此这里用它的提亮版本作为强调色，
+   色相仍然是南大紫，保证浅色 / 深色两种模式下品牌色一致。
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #722F37;                          /* 南大紫（浅色模式主色） */
+$nju-accent                 : mix(#fff, $primary-color, 45%);   /* 深色模式强调色：提亮版南大紫 */
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+
+$background                 : #474747;
+$background-light           : mix(#fff, $background, 80%);
+$background-lighter         : mix(#fff, $background, 90%);
+$text                       : #ffffff;
+$link                       : #{$nju-accent};
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : mix(#fff, $link, 25%);
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #{$nju-accent};
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$nju-accent};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$background};
+    --global-border-color               : #{$light-gray};
+    --global-dark-border-color          : #{$background-light};
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$light-gray};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-dark};
+    --global-link-color-visited         : #{$link-light};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$nju-accent};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #f3f3f3;
+    --global-thead-color                : #{$background-lighter};
+}
