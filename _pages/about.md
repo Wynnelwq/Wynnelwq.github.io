@@ -35,5 +35,5 @@ My current project studies AI-generated search summaries on Weibo. I collect the
 
 ## Education
 
-- **M.A. in Journalism and Communication (Computational Communication)**, Nanjing University, 2025 – present
-- **B.Eng. in Computer Science and Technology**, Northeast Forestry University, 2021 – 2025
+- **M.A. in Journalism and Communication (Computational Communication)**, Nanjing University
+- **B.Eng. in Computer Science and Technology**, Northeast Forestry University
